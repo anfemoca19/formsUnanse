@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "fuente";
+  src: url("fonts/Poppins-ExtraLight.ttf") format("truetype"),
+    url("fonts/Poppins-SemiBold.ttf") format("truetype"),
+    url("fonts/Poppins-Thin.ttf") format("truetype");
+}
+
+body {
+  font-family: fuente;
+  margin: 0;
+  padding: 0;
+  background-color: #fcb84c;
+}
+
+header {
+  background-color: #132047;
+  color: white;
+  height: 60%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  height: 60%;
+}
+.logo {
+  width: 229px;
+  height: 55px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  color: beige;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: #fcb84c; /* Cambia el color al pasar el cursor */
+}
+
+nav ul li a:active {
+  color: #fcb84c; /* Color cuando está activo (haciendo clic) */
+}
+.redes-sociales img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+/* Seccion cards a forms */
+
+.container-btn-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+}
+.container-elementos-btns {
+  width: 310px;
+  height: 388px;
+}
+
+.card {
+  /* border: 1px solid #132047; */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px #132047;
+  transition: transform 0.3s ease;
+  background-color: #132047;
+  margin: 20px;
+  width: 270px; /* Ancho de cada tarjeta */
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+  color: #fcb84c;
+}
+
+.card-title {
+  margin-top: 0;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fcb84c;
+  color: #132047;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.boton:hover {
+  background-color: #0a1626;
+  color: #fcb84c;
+  border: 1px solid #fcb84c;
+}
+
+/* seccion contacto */
+
+.container-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #132047;
+  padding: 20px;
+  color: white;
+  flex-direction: column;
+  gap: 52px;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  padding: -1 85px;
+  gap: 30px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.item img {
+  width: 30px; /* Ajusta el tamaño según sea necesario */
+  margin-right: 10px;
+}
+
+.imagen {
+  text-align: center;
+}
+
+.imagen img {
+  max-width: 100%;
+}
+
+.texto-contact {
+  text-align: center;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: rgb(219, 219, 219);
+  color: rgb(19 32 68);
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de cotizaciones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="expedicion.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo unanse.webp" alt="Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="https://www.unanse.co/">Inicio</a></li>
+            <li><a href="#" onclick="irAQuienesSomos()">Quiénes somos</a></li>
+            <li><a href="#" onclick="irANuestosServicios()">Nuestros servicios</a></li>
+            <li><a href="#" onclick="irANuestroAliados()">Nuestros aliados</a></li>
+            <li><a href="#" onclick="irAContactaenos()">Contactenos</a></li>
+            <li><a href="https://www.unanse.co/noticias"  >Noticias</a></li>
+            <li><a href="./listado-formularios.html">Formularios</a></li>
+        </ul>
+        </nav>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/unanseseguros/" target="_blank"><img src="./images/icon-facebook.webp" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/unavailable/" target="_blank"><img src="./images/linkind.webp" alt="linkedin"></a>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-sm mt-5">
+      <h1 class="title-form mb-5 text-center">Formulario de Expedición de vehículo</h1>
+      <form>
+        <!-- Primera Vista -->
+        <div class="accordion" id="accordionExample">
+          <!-- Sección 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Información del Aliado (Asesor)
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="mb-3">
+                      <!-- <label for="nombre" class="form-label">Nombre</label> -->
+                      <input type="text" required  class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                      <!-- <label for="correo" class="form-label">Correo</label> -->
+                      <input type="email" required class="form-control" name="correo" id="correo" placeholder="Correo">
+                    </div>
+                    <div class="mb-3">
+                      <!-- <label for="identificacion" class="form-label">Cédula o Nit</label> -->
+                      <input type="text" required class="form-control" name="nombre_tecnico" id="nombre_tecnico" placeholder="Nombre del Técnico(a)">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="mb-3">
+                      <!-- <label for="identificacion" class="form-label">Cédula o Nit</label> -->
+                      <input type="number" required class="form-control" name="identificacion" id="identificacion" placeholder="Cédula o Nit">
+                    </div>
+                    <div class="mb-3">
+                      <!-- <label for="identificacion" class="form-label">Número Celular</label> -->
+                      <input type="number" required class="form-control" name="numero_celular" id="numero_celular" placeholder="Número Celular">
+                    </div>
+                    <!-- Agrega más campos aquí -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sección 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Información del Cliente (Natural o Jurídico )
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="mb-3">
+                      <!-- <label for="nombre" class="form-label">Nombre</label> -->
+                      <input type="text" required  class="form-control" name="nombre"  id="nombre" placeholder="Nombres y Apellidos ó Razón social">
+                    </div>
+                    <div class="mb-3">
+                      <!-- <label for="correo" class="form-label">Correo</label> -->
+                      <input type="email" required class="form-control" name placeholder="Correo">
+                    </div>
+                    <div class="mb-3">
+                      <!-- <label for="identificacion" class="form-label">Cédula o Nit</label> -->
+                      <input type="text" required class="form-control" id="nombreTecnico" placeholder="Dirección">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="mb-3">
+                      <!-- <label for="identificacion" class="form-label">Cédula o Nit</label> -->
+                      <input type="number" required class="form-control" id="identificacion" placeholder="Cédula o Nit">
+                    </div>
+                    <div class="mb-3">
+                      <!-- <label for="celular" class="form-label">Número Celular</label> -->
+                      <input type="number" required class="form-control" name="numero_celular" id="numero_celular" placeholder="Número Celular">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Seccion 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Información del Vehículo
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="mb-3">
+                      <!-- <label for="nombre" class="form-label">Nombre</label> -->
+                      <input type="text" required  class="form-control" id="placa" placeholder="Placa">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Seccion 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Aseguradora
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+              <div class="accordion-body">
+                <div class="mb-3 row">
+                  <div class="col">
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre de la Compañia</label>
+                      <input type="text" required  class="form-control" id="compañia" placeholder="Compañia">
+                    </div>
+                    <div class="col mb-3">
+                      <label for="agente" class="form-label">Adjuntar Sarlaft</label>
+                      <input class="form-control" type="file" id="agente" name="fileUpload[]" accept=".jpg, .jpeg, .png, .pdf" multiple required>
+                    </div>
+                    <div class="col mb-3">
+                      <label for="adjCotizacion" class="form-label">Adjuntar cotización</label>
+                      <input class="form-control" type="file" id="adjCotizacion" name="fileUpload[]" accept=".jpg, .jpeg, .png, .pdf" multiple required>
+                    <!-- <small id="fileHelp" class="form-text text-muted">Por favor seleccione archivos en formato de imagen (JPG, JPEG, PNG) o PDF.</small> -->
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col mb-3">
+                      <label for="adjuntarC" class="form-label">Adjuntar Cédula*</label>
+                      <input class="form-control" type="file" id="adjuntarC" name="fileUpload[]" accept=".jpg, .jpeg, .png, .pdf" multiple required>
+                    <!-- <small id="fileHelp" class="form-text text-muted">Por favor seleccione archivos en formato de imagen (JPG, JPEG, PNG) o PDF.</small> -->
+                    </div>
+                    <div class="col mb-3">
+                      <label for="rut" class="form-label">Adjuntar RUT</label>
+                      <input class="form-control" type="file" id="rut" name="fileUpload[]" accept=".jpg, .jpeg, .png, .pdf" multiple required>
+                      <!-- <small id="fileHelp" class="form-text text-muted">Por favor seleccione archivos en formato de imagen (JPG, JPEG, PNG) o PDF.</small> -->
+                    </div>
+                    <div class="col mb-3">
+                      <label for="matricula" class="form-label">Matricula del vehículo</label>
+                      <input class="form-control" type="file" id="matricula" name="fileUpload[]" accept=".jpg, .jpeg, .png, .pdf" multiple required>
+                    <!-- <small id="fileHelp" class="form-text text-muted">Por favor seleccione archivos en formato de imagen (JPG, JPEG, PNG) o PDF.</small> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       <!-- Botones para cambiar de vista -->
+       <div class="loader" id="loader"></div>
+        <div class="mt-3 text-center">
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+
+    
+    <section class="contacto">
+      <div class="container-contacto">
+          <div class="info">
+              <div class="item">
+                <svg preserveAspectRatio="xMidYMid meet" data-bbox="66.5 49.5 67 100.997" viewBox="66.5 49.5 67 100.997" height="35" width="29" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-label="Localización">
+                  <g>
+                      <path d="M133.5 83.041c0-18.495-15.028-33.541-33.5-33.541S66.5 64.546 66.5 83.041a33.49 33.49 0 0 0 2.908 13.65l.008.02.001.002a33.472 33.472 0 0 0 2.092 3.939l25.522 48.062a3.363 3.363 0 0 0 5.938 0l25.807-48.563c.077-.104.161-.201.228-.316a33.567 33.567 0 0 0 4.496-16.794zm-33.498 56.921L77.945 98.427a3.386 3.386 0 0 0-.338-.686c-.074-.113-.137-.231-.209-.345l-1.923-3.621a26.768 26.768 0 0 1-2.249-10.734c0-14.781 12.011-26.806 26.774-26.806s26.773 12.025 26.773 26.806c0 4.031-.913 8.001-2.64 11.603-.085.119-.175.235-.245.368l-23.886 44.95z" fill="#FCB84C"></path>
+                      <path d="M100 70.204c-7.517 0-13.633 6.123-13.633 13.65s6.116 13.65 13.633 13.65 13.633-6.124 13.633-13.65-6.115-13.65-13.633-13.65z" fill="#542D86"></path>
+                  </g>
+              </svg>
+              
+                  <p>Carrera 66 # 48-26 Oficina 301. Medellín - Colombia.</p>
+              </div>
+              <div class="item">
+                <svg preserveAspectRatio="xMidYMid meet" data-bbox="43.5 62 112.999 76.001" viewBox="43.5 62 112.999 76.001" height="35" width="29" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-label="Email">
+                  <g>
+                      <path d="M137.983 101.74h-16.632a3.364 3.364 0 0 0-3.372 3.357v15.351a3.365 3.365 0 0 0 3.372 3.357h16.632a3.364 3.364 0 0 0 3.372-3.357v-15.351a3.363 3.363 0 0 0-3.372-3.357z" fill="#542D86"></path>
+                      <path d="M60.397 106.257h23.205a2.018 2.018 0 0 0 2.023-2.014 2.018 2.018 0 0 0-2.023-2.014H60.397a2.018 2.018 0 0 0-2.023 2.014 2.017 2.017 0 0 0 2.023 2.014z" fill="#FCB84C"></path>
+                      <path d="M83.602 110.758H60.397a2.018 2.018 0 0 0-2.023 2.014c0 1.113.906 2.014 2.023 2.014h23.205a2.018 2.018 0 0 0 2.023-2.014 2.018 2.018 0 0 0-2.023-2.014z" fill="#FCB84C"></path>
+                      <path d="M83.602 119.286H60.397a2.018 2.018 0 0 0-2.023 2.014c0 1.112.906 2.014 2.023 2.014h23.205a2.018 2.018 0 0 0 2.023-2.014 2.018 2.018 0 0 0-2.023-2.014z" fill="#FCB84C"></path>
+                      <path d="M153.128 62H46.872a3.364 3.364 0 0 0-3.372 3.357v69.287a3.365 3.365 0 0 0 3.372 3.357h106.255a3.364 3.364 0 0 0 3.372-3.357V65.357A3.363 3.363 0 0 0 153.128 62zm-14.886 6.713l-38.241 21.411-38.242-21.411h76.483zm-87.997 62.574V69.968L98.347 96.9a3.377 3.377 0 0 0 3.306 0l48.101-26.932v61.319H50.245z" fill="#FCB84C"></path>
+                  </g>
+              </svg>
+              
+                  <p>contacto@unanse.co</p>
+              </div>
+              <div class="item">
+                <svg preserveAspectRatio="xMidYMid meet" data-bbox="45 50 110 100" viewBox="45 50 110 100" height="35" width="29" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-label="Contacto telefónico">
+                  <g>
+                      <path d="M148.643 97.549C148.026 71.227 126.451 50 100 50S51.975 71.227 51.358 97.549c-3.856 2.958-6.358 7.6-6.358 12.827 0 8.514 6.613 15.496 14.967 16.113 8.415 12.161 22.237 20.278 38.163 20.881l.128.003a3.335 3.335 0 0 0 3.329-3.21 3.335 3.335 0 0 0-3.206-3.46c-12.571-.476-23.623-6.377-30.976-15.411 5.821-2.449 9.92-8.212 9.92-14.916 0-8.918-7.251-16.174-16.163-16.174-1.011 0-1.996.105-2.956.284C60.328 73.283 78.261 56.672 100 56.672c21.739 0 39.672 16.611 41.793 37.814a16.1 16.1 0 0 0-2.956-.284c-8.912 0-16.163 7.256-16.163 16.174s7.251 16.174 16.163 16.174c8.912 0 16.163-7.256 16.163-16.174 0-5.226-2.501-9.868-6.357-12.827zm-87.48 3.392c5.199 0 9.429 4.232 9.429 9.435 0 4.408-3.041 8.109-7.131 9.14a9.367 9.367 0 0 1-2.298.295 9.378 9.378 0 0 1-6.073-2.229 9.417 9.417 0 0 1-2.944-9.956 9.467 9.467 0 0 1 5.949-6.161 9.34 9.34 0 0 1 3.068-.524zm77.674 18.87c-5.199 0-9.429-4.232-9.429-9.435 0-5.202 4.23-9.435 9.429-9.435s9.429 4.232 9.429 9.435c-.001 5.202-4.23 9.435-9.429 9.435z" fill="#FCB84C"></path>
+                      <path d="M100 132.077c-4.938 0-8.956 4.02-8.956 8.961S95.062 150 100 150s8.956-4.02 8.956-8.961-4.018-8.962-8.956-8.962z" fill="#542D86"></path>
+                  </g>
+              </svg>
+              
+                  <p>311 324 4570
+                    / 318 358 7162
+                    / 314 861 7399</p>
+              </div>
+              <div class="item">
+                <div data-testid="svgRoot-comp-kd0d9mib" class="aizuI7 TcoJIb comp-kd0d9mib">
+                  <!--?xml version="1.0" encoding="UTF-8"?-->
+                  <svg preserveAspectRatio="xMidYMid meet" data-bbox="36 29.5 128.001 141" viewBox="36 29.5 128.001 141" height="35" width="29" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-label="Compartir den redes">
+                      <g>
+                          <path d="M140 122.6c-7.379 0-13.988 3.343-18.394 8.588L82.46 108.434A23.806 23.806 0 0 0 84 100c0-2.968-.548-5.81-1.541-8.435l39.127-22.776C125.991 74.047 132.61 77.4 140 77.4c13.233 0 24-10.744 24-23.95S153.233 29.5 140 29.5s-24 10.744-24 23.95c0 2.968.548 5.81 1.541 8.435L78.415 84.661C74.009 79.403 67.39 76.05 60 76.05c-13.233 0-24 10.744-24 23.95s10.767 23.95 24 23.95c7.391 0 14.011-3.354 18.417-8.614l39.137 22.749a23.773 23.773 0 0 0-1.553 8.465c0 13.206 10.767 23.95 24 23.95s24-10.744 24-23.95S153.233 122.6 140 122.6zm0-85.1c8.822 0 16 7.155 16 15.95s-7.178 15.95-16 15.95-16-7.155-16-15.95 7.178-15.95 16-15.95zm-80 78.45c-8.822 0-16-7.155-16-15.95s7.178-15.95 16-15.95S76 91.205 76 100s-7.178 15.95-16 15.95zm80 46.55c-8.822 0-16-7.155-16-15.95a15.8 15.8 0 0 1 1.894-7.513c.132-.162.256-.332.364-.518.07-.121.114-.25.17-.375 2.828-4.52 7.846-7.544 13.572-7.544 8.822 0 16 7.155 16 15.95s-7.178 15.95-16 15.95z" fill="orange" data-color="1"></path>
+                      </g>
+                  </svg>
+              </div>
+              
+              <a href="https://www.facebook.com/unanseseguros/" target="_blank"><img src="./images/icon-facebook.webp" alt="Facebook"></a>
+              <a href="https://www.linkedin.com/company/unavailable/" target="_blank"><img src="./images/linkind.webp" alt="linkedin"></a>
+              </div>
+          </div>
+          <div>
+        <div class="imagen">
+            <a href="https://www.acois.com.co/"><img src="./images/Logo acois.webp" alt="Imagen pequeña"></a>
+        </div>
+        <div class="texto-contact">
+            <p>Miembro de la Asociación Colombiana de Intermediarios de Seguros</p>
+        </div>
+      </div>
+          
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="contenedor">
+      <p>
+        © 2023 | Desarrollado por teachconection</p>
+    </div>
+  </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./expedicion.js"></script>
+</body>
+</html>

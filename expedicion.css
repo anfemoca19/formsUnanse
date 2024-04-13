@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'fuente';
+  src: url('fonts/Poppins-ExtraLight.ttf') format('truetype'), 
+        url('fonts/Poppins-SemiBold.ttf') format('truetype'),
+        url('fonts/Poppins-Thin.ttf') format('truetype'); 
+}
+
+body {
+  font-family: fuente;
+  margin: 0;
+  padding: 0;
+  background-color: #fcb84c;
+}
+
+header {
+  background-color: #132047;
+  color: white;
+  height: 60%;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  height: 60%;
+}
+.logo {
+  width: 229px;
+  height: 55px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  color: beige;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: #fcb84c; 
+}
+
+nav ul li a:active {
+  color: #fcb84c; /
+}
+.redes-sociales img {
+  width: 30px;
+  margin-left: 10px;
+}
+/* form */
+
+.title-form {
+  font-weight: 700;
+  color: #132047;
+}
+.acordion {
+  box-shadow: 0 0 10px rgba(19, 32, 71, 0.1);
+}
+.acordion-item {
+  border: 10px solid #132047;
+}
+.acordion-button:focus {
+  box-shadow: #d3562d;
+}
+
+.form-control {
+  background-color: #f8f9fa; /* Color de fondo */
+  color: #132047; /* Color del texto */
+  border-color: #dadee8; /* Color del borde */
+}
+
+/* Estilos para los botones */
+.btn-primary {
+  background-color: #132047; /* Color de fondo del botón primario */
+  color: #fcb84c;
+  border-color: #132047;
+}
+
+.btn-primary:hover {
+  background-color: #fcb84c; /* Color de fondo al pasar el mouse sobre el botón primario */
+  border-color: #132047; /*Color del borde al pasar el mouse sobre el botón primario8*/
+  color: #132047;
+}
+
+/* Estilos para los botones de archivo */
+.custom-file-input {
+  color: rgb(237, 236, 237); /* Color del texto */
+  border-color: #ced4da; /* Color del borde */
+}
+
+/* seccion contacot */
+.container-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #132047;
+  padding: 20px;
+  color: white;
+  flex-direction: column;
+  gap: 52px;
+  margin-top: 70px;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  padding: -1 85px;
+  gap: 30px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.item img {
+  width: 30px; /* Ajusta el tamaño según sea necesario */
+  margin-right: 10px;
+}
+
+.imagen {
+  text-align: center;
+}
+
+.imagen img {
+  max-width: 100%;
+}
+
+.texto-contact {
+  text-align: center;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: rgb(219, 219, 219);
+  color: rgb(19 32 68);
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
